@@ -1,0 +1,85 @@
+<!--
+  Generated template for the RequestPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+  <ion-navbar>
+    <ion-title>Request</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+    <ion-grid >
+        <ion-row>
+         <ion-col col-2></ion-col>
+         <ion-col col-8>
+           <img ion-img style=" border-radius:30%" src="assets/imgs/2.jpg">
+         </ion-col>
+         <ion-col col-2></ion-col>
+         <ion-col col-5></ion-col>
+         <ion-col col-2 >
+           <p class="bar"></p>
+         </ion-col>
+         <ion-col col-5></ion-col>
+        </ion-row>
+        <ion-row>
+            <ion-col col-2></ion-col>
+            <ion-col col-8>        
+              <h3 style="color: rgb(126, 89, 85)"><strong>Personal Information</strong></h3>
+            </ion-col>
+            <ion-col col-2></ion-col>
+           </ion-row>       
+        <ion-row class="input-bg" round>
+            <ion-col col-2 ><ion-icon style="font-size: 30px !important; padding-top: 5px" name="person"></ion-icon>          </ion-col>
+            <ion-col col-10>
+              <ion-input placeholder=" Name" type="text"></ion-input>
+            </ion-col>
+          </ion-row><br>
+          <ion-row class="input-bg" round>
+              <ion-col col-2 ><ion-icon style="font-size: 30px !important; padding-top: 5px" name="phone-portrait"></ion-icon>          </ion-col>
+              <ion-col col-10>
+             <ion-input placeholder="Phone" type="number"></ion-input>
+            </ion-col>
+          </ion-row><br>
+          <ion-row class="input-bg" round>
+              <ion-col col-2 ><ion-icon style="font-size: 30px !important; padding-top: 5px" name="log-in"></ion-icon>          </ion-col>
+              <ion-col col-10>
+              <ion-input placeholder="Email" type="email"></ion-input>
+           </ion-col>
+          </ion-row><br>
+          <ion-row class="input-bg" round>
+              <ion-col col-2 ><ion-icon style="font-size: 30px !important; padding-top: 5px" name="card"></ion-icon>          </ion-col>
+            <ion-col col-10>
+             <ion-input placeholder="CNIC" type="number"></ion-input>
+            </ion-col>
+          </ion-row><br>
+          <ion-row class="input-bg" round>
+              <ion-col col-2 ><ion-icon style="font-size: 30px !important; padding-top: 5px" name="calendar"></ion-icon>          </ion-col>
+            <ion-col col-10>
+             <ion-input placeholder="DOB" type="date"></ion-input>
+            </ion-col>
+           </ion-row><br>
+           <ion-row class="input-bg" round>
+              <ion-col col-2 ><ion-icon style="font-size: 30px !important; padding-top: 5px" name="globe"></ion-icon>          </ion-col>
+            <ion-col col-10>
+            <ion-label>City</ion-label>
+             <ion-select interface="popover">
+               <ion-option>Lahore</ion-option>
+               <ion-option>Karachi</ion-option>
+               <ion-option>Islamabad</ion-option>
+             </ion-select>
+            </ion-col>
+          </ion-row><br>
+          <ion-row>
+              <ion-col col-2></ion-col>
+              <ion-col col-2></ion-col>
+              <ion-col col-8>
+                 <button ion-button round block color="danger" (click)="presentToast('bottom')" >Done</button>                
+              </ion-col>
+           </ion-row> 
+          
+    </ion-grid>    
+
+</ion-content>

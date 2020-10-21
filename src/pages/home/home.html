@@ -1,0 +1,76 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      <h1>Book A Car</h1>
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content padding>
+  <ion-grid >
+    <ion-row>
+     <ion-col col-2></ion-col>
+     <ion-col col-8>
+       <img ion-img style=" border-radius:30%" src="assets/imgs/2.jpg">
+     </ion-col>
+     <ion-col col-2></ion-col>
+     <ion-col col-5></ion-col>
+     <ion-col col-2 >
+       <p class="bar"></p>
+     </ion-col>
+     <ion-col col-5></ion-col>
+    </ion-row>
+    <ion-row>
+     <ion-col col-2></ion-col>
+     <ion-col col-8>        
+       <h3 style="color: rgb(126, 89, 85)"><strong>Booking Details</strong></h3>
+     </ion-col>
+     <ion-col col-2></ion-col>
+    </ion-row>
+    <ion-row class="input-bg">
+     <ion-col col-2 > 
+       <ion-icon style="font-size: 30px !important; padding-top: 5px" name="car"></ion-icon>      
+     </ion-col>
+     <ion-col col-10> 
+        <ion-label ><strong>Category</strong></ion-label>
+        <ion-select interface="popover">
+          <ion-option>With Driver</ion-option>
+          <ion-option>Self Drive</ion-option>
+        </ion-select>
+      </ion-col>
+   </ion-row> <br>    
+   <ion-row class="input-bg" round>
+    <ion-col col-2 >
+     <ion-icon style="font-size: 30px !important; padding-top: 5px" name="navigate"></ion-icon>      
+    </ion-col> 
+    <ion-col col-10 >        
+        <ion-label >Your Picking up Point</ion-label>
+        <ion-input type="text"></ion-input>   
+    </ion-col>
+  </ion-row> <br>
+  <ion-row class="input-bg" round>
+    <ion-col col-2>
+     <ion-icon style="font-size: 30px !important; padding-top: 5px" name="navigate"></ion-icon>      
+    </ion-col>
+    <ion-col col-10>         
+        <ion-label>Your Dropping off Point</ion-label>
+        <ion-input type="text"></ion-input>   
+    </ion-col>
+  </ion-row> <br>
+  <ion-row class="input-bg" round>
+    <ion-col col-2>
+     <ion-icon style="font-size: 30px !important; padding-top: 5px" name="calendar"></ion-icon>     
+    </ion-col>
+    <ion-col>
+     <ion-label >Booking</ion-label>
+     <ion-input placeholder="Number of Days"></ion-input>
+    </ion-col>
+  </ion-row> <br>
+  <ion-row>
+    <ion-col col-2></ion-col>
+    <ion-col col-2></ion-col>
+    <ion-col col-8>
+       <button ion-button round block color="danger" (click)="req()">Request to Book</button>                
+    </ion-col>
+ </ion-row> 
+</ion-grid>
+</ion-content>
